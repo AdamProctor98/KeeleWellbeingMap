@@ -1,0 +1,343 @@
+html{
+	height: 100%;
+	overflow-x:hidden;
+}
+/* MAP STYLE */
+.wbmap {
+	height:100vh;
+	width:100vw;
+}
+#map { 
+	width:100%;  
+	display:flex; 
+	min-height:98.5vh;
+}
+
+#map .active{width:100%;}
+/*============*/
+
+/* EVENT MARKER STYLE */
+#eventMarker {
+	border: 5px solid red;
+	width:50px; 
+	height:50px; 
+	border-radius: 50%; 
+	cursor: pointer;
+}
+/*============*/
+
+/* NAVBAR STYLE */
+.navbar {
+    background-color: #272548;
+    border: none;
+    border-radius: 0;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.navbar #topNavOptions{justify-content: flex-start;}
+
+.navbar #topNavLogin{justify-content: flex-start;}
+
+.navbar #infoBtn {margin-left: 5px;}
+/*===========*/
+
+
+/* SIDEBAR STYLE */
+.contentManager {
+    display: flex;
+    width: 100%;
+    height: 100%
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    background: #272548;
+    color: #fff;
+    transition: all 0.3s;
+    min-height: 100% !important;
+}
+
+#sidebar.active {
+    margin-left: -250px;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #1a1831;
+    text-align: center;
+}
+
+#sidebar .sidebar-subheader{
+	margin-top:5px;
+	margin-bottom:10px;
+	text-align: center;
+}
+
+#sidebar .card{
+	color:#000000;
+	margin: 10px 10px 10px 10px;
+}
+
+#newsEventCard .eventCard{
+	height: 70vh;
+	margin:0 auto;
+	overflow-y:scroll;
+	width:90%;
+}
+
+#addEventDiv a{
+	margin: 0 auto;
+	margin-top: 10px;
+}
+/*===========*/
+
+/* CONTENT STYLE */
+
+#content {
+    width: 100%;
+    transition: all 0.3s;
+}
+
+#content h5{
+    color:#FFFFFF
+}
+
+#beActiveModal h4{
+    color:#75B4B7;
+}
+
+#takeTimeOut h4{
+    color:#C5D768;
+}
+
+#eatWellModal h4{
+    color:#006338;
+}
+
+#connectModal h4{
+    color:#D0703D;
+}
+
+#beSupportedModal h4{
+    color:#735365;
+}
+
+#beSupportedModal strong{
+    color:#735365;
+}
+
+#connectModal a, #beSupportedModal a{
+    color:#0645AD;
+}
+
+.textarea {
+    resize: none;
+}
+
+#mapKeyImg{
+	position:absolute;
+	top:60px;
+	right:10px;
+}
+
+#infoModal{
+	margin: 0 auto;
+}
+/*===========*/
+
+/* SIDEBAR COLLAPSE STYLE */
+
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+    #topNav span {
+        display: none;
+    }
+}
+/*===========*/
+
+/* FILTER OPTION STYLE */
+.filter-group {
+    font-weight: 600;
+    border-radius: 3px;
+    width: 190px;
+    color: #fff;
+    margin:auto;
+}
+
+.filter-group input[type=checkbox]:first-child + label {
+    border-radius: 3px 3px 0 0;
+    margin:auto;
+}
+
+.filter-group label:last-child {
+    border-radius: 0 0 3px 3px;
+    margin:auto;
+}
+
+.filter-group input[type=checkbox] {
+    display: none;
+    margin:auto;
+}
+
+.filter-group input[type=checkbox] + label {
+    background-color: #da3549;
+    display: block;
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    margin:auto;
+}
+.filter-group input[type=checkbox] + label:hover{
+    background-color: #932331;
+    margin:auto;
+}
+
+.filter-group input[type=checkbox]:checked + label {
+    background-color: #30a64a;
+    margin:auto;
+}
+
+.filter-group input[type=checkbox]:checked + label:hover {
+    background-color: #247235;
+    margin:auto;
+}
+
+.filter-group input[type=checkbox]:checked + label:before {
+    margin-right: 5px;
+    margin:auto;
+    content: '✔ ';
+}
+/*===========*/
+ 
+/* FILTER MODAL STYLE*/
+.modal.filter .modal-dialog {
+	position: fixed;
+	margin:0 auto;
+	width: 250px;
+	height: 50vh;
+	-webkit-transform: translate3d(0%, 0, 0);
+}
+
+.modal.filter .modal-content {
+	height: 100%;
+	overflow-y: auto;
+}
+
+.modal.filter .modal-header{
+	height:70px;
+}
+
+.modal.filter .modal-body {
+	padding: 15px 15px 15px;
+}
+
+.modal.filter.fade .modal-dialog {
+	right: 10px;
+	top: 70px;
+	-webkit-transition: right 0.1s ease-out;
+}
+.modal.filter.fade.in .modal-dialog {
+	right: 10px;
+	top: 70px;
+}
+
+#filter h5{
+	text-align: center;
+}
+/*===========*/
+
+/* MAP BUTTONS STYLE*/
+#mapOptions i{
+   font-size: 20px;
+}
+
+#mapOptions button,a{
+	right:15px;
+}
+
+.filterBtn{
+    position: absolute;
+    top: 70px;
+    text-align:center;
+    border-radius: 3px;
+    color: #fff;
+    margin:auto;
+    width:50px;
+}
+
+.filterBtn:hover{
+	width:160px;
+}
+
+.filterBtn:hover:after{
+	content:"Filter Options";
+	padding-left:15px;
+}
+
+.lsubBtn{
+    position: absolute;
+    top: 115px;
+    text-align:center;
+    border-radius: 3px;
+    color: #fff;
+    margin:auto;
+	width:50px;
+}
+
+.lsubBtn:hover{
+    width:165px;
+}
+
+.lsubBtn:hover:after{
+	content:"Add Location";
+	padding-left:15px;
+}
+
+.fixBtn{
+    position: absolute;
+    top: 160px;
+    text-align:center;
+    border-radius: 3px;
+    color: #fff;
+    margin:auto;
+	width:50px;
+}
+
+.fixBtn:hover{
+	width:150px;
+}
+
+.fixBtn:hover:after{
+	content:"Resize Map";
+	padding-left:15px;
+}
+
+.rrsubBtn{
+  position: absolute;
+  top: 205px;
+  text-align:center;
+  border-radius: 3px;
+  color: #fff;
+  margin:auto;
+  width:50px;
+}
+
+.rrsubBtn:hover{
+  width:170px;
+}
+
+.rrsubBtn:hover:after{
+	content:"Add Run Route";
+	padding-left:15px;
+}
+/*===========*/
+
+
+

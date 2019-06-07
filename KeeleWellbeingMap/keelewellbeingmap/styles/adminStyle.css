@@ -1,0 +1,74 @@
+/*Add Location Map Style*/
+#addMap {
+	width:100%;
+	height:300px;
+	display:flex;
+}
+/*Submitted Location Map Style*/
+#subMap {
+	width:100%;
+	height:300px;
+	display:flex;
+	margin-bottom: 10px;
+}
+/*Submission's Card Style*/
+#lsubmissionCard{
+	max-height: 400px;
+	width: 100%;
+	overflow-y: scroll;
+}
+/*Admin Navigation Bar Style*/
+#adminNav{
+	background-color: #272548;
+}
+
+#navPilss{
+	padding-bottom:10px;
+}
+
+#viewCard{
+	margin-bottom: 50px;
+}
+
+#viewCardBody{
+	max-height:500px;
+	overflow-y:scroll;
+}
+
+#resizeAddMap{
+	margin-top:10px;
+}
+
+#subCard{
+	max-height: 400px;
+	width:100%;
+}
+
+#resizeSubMap{
+	margin-top:10px;
+}
+
+.adminButton{
+	width:40%;
+	margin-top: 10px;
+}
+
+#adminOptions .card{
+	min-width: 25rem;
+	max-width: 200rem;
+	margin: 0 auto;
+	margin-bottom:10px
+}
+
+#esubButtons button{
+	width: 40%;
+	margin: 0 auto;
+}
+
+#rrsubButtons button{
+	width: 40%;
+	margin: 0 auto;
+}
+.rrSubCard{
+	margin-bottom: 50px;
+}
